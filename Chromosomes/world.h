@@ -19,7 +19,7 @@ public:
 
     void showAll();
     void showBest();
-    //void showMedian();
+    void showMedian();
     bool isFinish();
 private:
     int popSize;

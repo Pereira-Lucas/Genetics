@@ -42,9 +42,12 @@ void World::showBest() {
     }
 }
 
-/*void World::showMedian() {
-
-}*/
+void World::showMedian() {
+    if(sorted) {
+        std::cout << "Median ";
+        pops.at(popSize / 2).showInfos();
+    }
+}
 
 bool World::isFinish() {
     return pops.at(0).getFitness() == 36;
